@@ -1,0 +1,8 @@
+// forEach() => get the each values from array & then doing some operations to that values
+
+
+let numbers=[1,2,3,4,5,6,7,8]
+
+numbers.forEach(function (data){ //function()=>callback function helps when the foreach method get the each values from array then that values passed into function parameter then it will enter inside a function & perform some operations
+    console.log(data*2) 
+})
