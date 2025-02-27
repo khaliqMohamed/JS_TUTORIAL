@@ -1,0 +1,17 @@
+//closure
+
+
+function outerFun(){
+    let a=10;
+    function innerFun(){
+        let b=10;
+        console.log(a+b)
+    }
+    return  innerFun;
+}
+
+
+let displayFun=outerFun() //in this line, it should access all the thigs which was declared inside outerFun & also in outerFun return 
+              innerFun so that innerFun havebeen assigned to displayFun then we
+              call displayFun as displayFun()
+displayFun()
