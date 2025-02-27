@@ -1,0 +1,6 @@
+let result;
+//null coelascing operator only used to avoid null and undefined values
+//in case we have a value in result variable, then that value will be printed on browser
+result=result ?? "hello";
+
+console.log(result)
