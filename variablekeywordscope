@@ -1,6 +1,7 @@
 // your code goes here
 function display(){
-    //age is defined in local scope & also declared in VAR keyword so we can't be able to access from outside of the function
+    //age is defined in local scope & also declared in VAR keyword so we can't be able to access from outside of the function this is in local scope
+    //age is defined in local scope & also declared in LET keyword so we can't be able to access from outside of the function this is in local scope
     var age=90
     if (true) {
         //name is defined in block scope which means name is declared in if block & also declared in VAR keyword,so we can't use outside of the function
