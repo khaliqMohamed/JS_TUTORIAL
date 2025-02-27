@@ -1,0 +1,31 @@
+// String & its methods
+
+
+let word=" Hello World! This is Javascript, You will definetly enjoy fun with our Javascript. Get ready Folks...! "
+
+
+console.log(word.length)
+
+console.log(word.toUpperCase())
+
+console.log(word.toLowerCase())
+
+
+console.log(word.charAt(24)) //get the value of index 24
+
+console.log(word.substring(10,15)) //get the particular string from index 10-14
+
+console.log(word.indexOf("Javascript"))
+
+console.log(word.lastIndexOf("Javascript"))
+
+
+console.log(word.replace("Javascript","JS"))
+
+console.log(word.split(" ")) //split the value using space & return it as Array
+
+console.log(word.replaceAll("Javascript","JS"))
+
+console.log(word.trim())
+
+
