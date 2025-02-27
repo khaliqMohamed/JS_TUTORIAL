@@ -1,0 +1,12 @@
+a=10
+e='12'
+f=true
+b='' //empty string if we do addition between these two values then it convert the dtatype & return addition values
+    // incase if we put some values between that quotes then it will convert the dtatype & return addition values
+c=a+b
+m=f+e // it will convert bool values to number datatype and perform subract
+d=a-e // in this case we try to subract the integer value with string value then it will convert the datatype & return the difference values
+
+//NOTE : + ==> convert the value to string, - ==> convert the value to number
+console.log(c,typeof c," ",d,typeof d)
+console.log("value of m",m,typeof m)
