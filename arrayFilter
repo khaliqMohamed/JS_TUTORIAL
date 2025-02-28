@@ -1,0 +1,14 @@
+let creatures=[
+  {"name":"shark","habitat":"Ocean"},
+  {"name":"whale","habitat":"Ocean"},
+  {"name":"lion","habitat":"savanna"},
+  {"name":"dolphin","habitat":"Ocean"}
+  ]
+  
+  //filter method is used to filter the each element of Array & return it to new variable
+  const updatedValue=creatures.filter((data)=>{return data.habitat=="Ocean"})
+  
+  console.log(updatedValue)
+  
+  
+    
