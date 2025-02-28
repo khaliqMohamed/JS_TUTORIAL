@@ -1,0 +1,15 @@
+//freeze()=> used to freeze the property& its value to that object
+// >>> which means we can't able to delete that property & also we can't change the value of
+// >>> that property
+
+// >>>main thing we can't mention particular property inside the freeze paranthesis,
+// >>> Object.freeze(stud_details.id) not like this
+// >>> if we try to do it, then it will doesn't apply to that thing
+// >>> so we have to put whole object variable
+Object.freeze(stud_details) 
+
+stud_details.id=23 // >>> we try to change the value of property id
+
+console.log(stud_details.id) // >>> but we display the result in log it doesn't update it
+
+console.log(stud_details)
