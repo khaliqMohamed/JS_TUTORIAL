@@ -1,0 +1,23 @@
+let stud_details={
+  id:1,
+  name:"john",
+  age:24,
+  address:"12,north cursin street",
+  phoneNo:2480840
+}//to create a obj just put {}, bcoz it holds the property:value what you want to give
+
+
+
+
+
+let res=Object.values(stud_details) //Object.values()=>In this case,Object represented as class
+//values() represented method. So, in Object class we have method called values that will helps to 
+//get the values of all property inside the objects
+
+console.log(res)
+
+let result=Object.keys(stud_details)//Object.keys()=>In this case,Object represented as class
+//keys() represented method. So, in Object class we have method called keys that will helps to 
+//get the keys of all property inside the objects
+
+console.log(result)
