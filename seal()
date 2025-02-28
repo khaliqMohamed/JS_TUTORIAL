@@ -1,0 +1,22 @@
+let stud_details={
+  id:1,
+  name:"john",
+  age:24,
+  address:"12,north cursin street",
+  phoneNo:2480840
+}//to create a obj just put {}, bcoz it holds the property:value what you want to give
+
+
+// >>> seal() => similar to freeze() but we update the property value but we can't able to
+// >>> add new property or delete existing property
+
+
+Object.seal(stud_details)
+
+
+delete stud_details.id; // >>> here, we try to delete the property but it's not
+console.log(stud_details) 
+
+stud_details.gender="m" // >>> here, we try to add the new property but it's not
+
+console.log(stud_details)
