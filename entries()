@@ -1,0 +1,6 @@
+//entries()=> used to convert all key:value pair into array element & main thing is whatever 
+//we didn't give the key in proper order, it'll automatically give it to ascending order
+
+let values={12:"a",1:"c",23:"b"}
+
+console.log(Object.entries(values))
