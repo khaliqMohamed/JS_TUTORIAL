@@ -13,3 +13,5 @@ stud_details.id=23 // >>> we try to change the value of property id
 console.log(stud_details.id) // >>> but we display the result in log it doesn't update it
 
 console.log(stud_details)
+
+delete stu_details.id; // >>> it return false bcoz we can't able to delete it 
