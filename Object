@@ -1,0 +1,28 @@
+let stud_details={
+  name:"john",
+  age:24,
+  address:"12,north cursin street",
+  phoneNo:2480840
+}//to create a obj just put {}, bcoz it holds the property:value what you want to give
+
+//another way to create the object... using Object keyword
+
+//let newStud=Object.create({name:"joesph",age:25}) //but we don't use this one much more
+let newStud=Object() //just passing the already declared object. it'll 
+//helps to copy the whole property:value of stud_details
+newStud["name"]="james" //this one is another way to passing the values when we creating the empty 
+//Object
+console.log(newStud)
+
+
+console.log(stud_details.name) //to access the property of the Object
+
+stud_details.name='james' //update the value of the property in the Object
+console.log(stud_details)
+
+// to check if the given property is there or not. use IN operator, it'll return boolean value
+
+
+console.log("age" in stud_details)
+
+
