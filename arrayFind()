@@ -1,0 +1,6 @@
+let values=[10,50,30,100]
+
+
+let res=values.find((data)=>{return data>10})
+//find()==>used to get the first occurance[value] when the inner expression will be true
+console.log(res)
