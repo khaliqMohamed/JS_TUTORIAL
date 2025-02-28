@@ -1,0 +1,20 @@
+// this => to access particular value
+
+function display(name){
+  
+  return { //object creation
+    name,
+    //name=this.name,
+    greet(){  // >>> in this function this refers to the objects inside this function not a params
+      console.log(`${this.name} "hello"`);
+  }
+  }
+}
+
+
+const obj=display("hari");
+console.log(obj.greet())
+
+
+const {greet}=display("hari"); // >>> this line only get the greet function & check this keyword refers to which name object property or params
+console.log(greet())
