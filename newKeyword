@@ -1,0 +1,11 @@
+// new keyword used to act as normal function to class
+
+
+function display(name){
+  //
+  this.name=name;
+}
+
+const obj=new display("jk") //in this line display function act as class & return a object 
+
+console.log(obj.name)
