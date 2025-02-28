@@ -1,0 +1,11 @@
+//some()=>similar to the find() method but a little bit of difference is find method
+//return the values when the condition is satisfied,some method
+//return the bool values which is true or false if the condition is satisfied
+
+
+let values=[1,0,9,23,54,-1]
+
+
+let res=values.some((el)=>{return el>54})
+
+console.log(res) //output : True
