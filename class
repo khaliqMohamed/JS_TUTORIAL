@@ -1,0 +1,33 @@
+class studDetails{
+    constructor(rollno,name,gender){
+        //whatever var name should be declare in this.__ but make sure to call the var in function showDetails()
+        //what name you have to be declared in this.__ that same name has been used.
+        this.rno=rollno;
+        this.stud_name=name;
+        this.stud_gender=gender;
+    }
+    
+    showDetails(){
+        console.log(this.rno,this.stud_name,this.stud_gender)
+    }
+    
+    greetmsg(){
+        console.log("Welcome to Student DB...")
+//         showdetails();
+    }
+    
+    
+    
+}
+
+
+class getDetails extends studDetails{
+    constructor(stud_rno,studName,studGender){
+        super(stud_rno,studName,studGender)
+    }
+}
+
+
+const printDetails=new getDetails(101,'john','m')
+printDetails.greetmsg()
+printDetails.showDetails();
