@@ -1,0 +1,20 @@
+// try catch used to handling the error which means normally if the error has occured in our coding then compiler 
+// immediately stop the execution which place has error found. so that time we use try catch, error has occured catch \
+// block takes to handle the error and prgm will be fully executed fully
+
+
+function add(a,b) {
+    return a/b;
+}
+
+let res=0
+try {
+    res=add(10,1)
+    console.log("result found,DONE")
+}
+catch(error){
+    console.log({name:error.name,message:error.message})
+}
+finally{
+    console.log({res})
+}
