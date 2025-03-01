@@ -1,0 +1,22 @@
+// promise --> it has three states which has pending,fulfilled[value],rejected [reason]
+
+// real world example is when we attending the interview then it immediately did not give response of your 
+// result. they might be take some time to analyze your interview [this state is called pending
+// then they will declare the result either you select[this stste is fulfilled with value]
+// or reject [this state is reject with reason]
+
+
+
+// creation of promise
+
+const promise = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        name:"john";
+        resolve("done") // if we didn't put resolve in this line then it shows status is pending bcoz after 1000 millisecond we don't do anything 
+        // so if we want to show status is fulfilled then we must called resolve as a function
+    },1000)
+})
+
+console.log(promise)
+//once the time is out then resolve func is called after that then method is called
+promise.then((data)=>console.log({result : data}))
