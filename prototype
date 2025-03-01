@@ -1,0 +1,35 @@
+function second(name){
+    this.name=name;
+    this.print=function(){
+        console.log(`${this.name},hello!`)
+    }
+}
+
+function first(name){
+    this.name=name;
+    
+}
+
+// prototype --> connect with a object to another obj
+// which means in this example we access the print function from the first() but it doesn't have 
+// so we connection between first with second using prototype 
+
+first.prototype=new second()
+
+const obj=new first('john')
+obj.print()
+
+
+// another method is...
+const disp={
+    show(){
+        console.log("hello")
+    }   
+}
+const display={
+   __proto__:disp
+}
+
+
+
+display.show()
